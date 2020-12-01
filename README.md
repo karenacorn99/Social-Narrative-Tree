@@ -10,3 +10,5 @@ Every 125 consecutive stories share the same seed.
 Every 25  consecutive stories share the same seed AND buildup.
 Every 5   consecutive stories share the same seed AND buildup AND climax.
 Every story has its distinct resolution and outlook. 
+
+arxiv: https://arxiv.org/abs/2010.15313
