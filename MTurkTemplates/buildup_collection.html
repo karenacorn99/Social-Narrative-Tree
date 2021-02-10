@@ -1,0 +1,23 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+  <p style = "margin-left: 25px;">The following sentence is a prompt to a story that describes a <strong>social</strong> interaction.</p>
+  
+  <p style = "margin-left: 25px;">${Starter}</p>
+
+  <br>
+
+  <div>
+    <p style = "margin-left: 25px;">Continue the story in <strong>ONE</strong> sentence. The continuation must contribute to the <strong>relationship</strong> of the people involved.</p>
+    <p style = "margin-left: 25px;">If you want to describe the environment(weather, place, etc), link it to what impact it has on their <strong>relationship</strong>.</p>
+    <p style = "margin-left: 25px;">Be <strong>specific</strong> in your answer. DO NOT write sentences like "they had fun" and "they had a good time": What specific activities they did? What happened during these activities?...</p>
+    <p style = "margin-left: 25px;">Remember, someone else will continue the story after you, so do NOT end the story yet. It is okay to leave the audience in suspense after rading your sentence.</p>
+    <crowd-text-area name="cont" rows="1" placeholder="" required></crowd-text-area>
+  </div>
+</crowd-form>

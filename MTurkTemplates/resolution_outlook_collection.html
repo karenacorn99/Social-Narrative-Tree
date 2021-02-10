@@ -1,0 +1,30 @@
+<!-- You must include this JavaScript file -->
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<!-- For the full list of available Crowd HTML Elements and their input/output documentation,
+      please refer to https://docs.aws.amazon.com/sagemaker/latest/dg/sms-ui-template-reference.html -->
+
+<!-- You must include crowd-form so that your task submits answers to MTurk -->
+<crowd-form answer-format="flatten-objects">
+
+  <p style = "margin-left: 25px;"><strong>Sample answer:</strong></p>
+  <p style = "margin-left: 25px;">Given: Amy asked her friend Jenny to go to the mall with her. Amy needed a new dress for the upcoming formal and she wanted to seek advice from Jenny whom she thinks has a good fashion sense.</p>
+  <p style = "margin-left: 25px;">Good response: At the third shop that they stopped by, Amy tried on a lace dress that she thought really fitted her and asked Jenny for opinions. Jenny casually replied that it did not look good because Amy was too fat.</p>
+
+  <br>    
+
+  <p style = "margin-left: 25px;">The following is the build up of a <strong>social</strong> narrative.</p>
+  
+  <p style = "margin-left: 25px;">${seed} ${buildup}</p>
+
+  <br>
+
+  <div>
+    <p style = "margin-left: 25px;">Write <strong>TWO</strong> sentences that describes something happened that had a <strong>significant impact</strong> on the <strong>relationship</strong> between the two people invovled.</p>
+    <p style = "margin-left: 25px;">Think of it as the <strong>climax</strong> of a narrative.</p>
+    <p style = "margin-left: 25px;">Be specific, realistic in your answer.</p>
+    <p style = "margin-left: 25px;">Remember, someone else will continue the story after you, so do NOT end the story yet. It is okay to leave the audience in suspense after rading your sentence.</p>
+    <p style = "margin-left: 25px;">Continue the story such that it best reflects social expectations.</p>
+    <crowd-text-area name="cont" rows="1" placeholder="" required></crowd-text-area>
+  </div>
+</crowd-form>
